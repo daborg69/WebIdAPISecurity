@@ -1,0 +1,21 @@
+https://github.com/Azure-Samples/active-directory-dotnetcore-daemon-v2/tree/master/2-Call-OwnApi
+
+
+WebApplication1 - API
+  Client ID:  847509a8-6023-46c6-afb7-cac6763a1750
+  Tenant ID:  8574f991-f2d3-4413-90fa-1a24cba1e9f6
+  Display Name:  ycy4y.Weather.API
+  Application ID URI:  api://847509a8-6023-46c6-afb7-cac6763a1750
+
+
+ConsoleApp1:
+  Client ID:  f89ddeb4-9513-4093-acff-5fd03601a7b3
+  Tenant ID:  8574f991-f2d3-4413-90fa-1a24cba1e9f6
+  Secret Name:  Second
+  Secret Value:  sLK8Q~YwrqBuX6g3sNe5PqZIsNgqOwQzOJv1Sc-7
+  Secret ID: 6b91692d-42b4-43d5-bd3a-61753541029b
+  Display Name:  3rdParty.Test.WeatherConsole
+  Scope:  api://847509a8-6023-46c6-afb7-cac6763a1750/.default
+
+// This command will acquire a token
+  curl --request POST --url "https://login.microsoftonline.com/8574f991-f2d3-4413-90fa-1a24cba1e9f6/oauth2/v2.0/token" --header "Content-Type: application/x-www-form-urlencoded" --data client_id=f89ddeb4-9513-4093-acff-5fd03601a7b3 --data scope=api%3A%2F%2F847509a8-6023-46c6-afb7-cac6763a1750%2F.default --data client_secret=sLK8Q~YwrqBuX6g3sNe5PqZIsNgqOwQzOJv1Sc-7 --data grant_type=client_credentials
